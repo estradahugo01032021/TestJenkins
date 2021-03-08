@@ -2,7 +2,7 @@ pipeline{
 agent any
 	environment
 	{
-		jenkins= "Jenkins outside"
+		jenkins= "Jenkins outside "
 	}
 	stages{
 		stage('Start'){
