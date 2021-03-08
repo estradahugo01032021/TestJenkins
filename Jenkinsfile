@@ -8,6 +8,7 @@ agent any
 		stage('Start'){
 			steps{
 				echo "Hello"
+				echo "test"
 					}
 			}	
 		}
