@@ -20,6 +20,14 @@ agent any
 		stage('Build'){
 			steps{
 				echo "Second Step " + jenkins
+				echo "Here a script will be execute it"
+				script{
+					def browsers = ["Chrome", "Firefox","Opera"]
+					for (int i =0; i<browsers.size(); i++)
+					{
+						echo "Testing ${browsers[i]} browser"
+					}
+				}
 			}
 		}
 
