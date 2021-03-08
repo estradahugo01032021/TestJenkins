@@ -21,6 +21,22 @@ agent any
 			steps{
 				echo "Second Step " + jenkins
 			}
-		}		
+		}
+
+		stage('Parallel in Secuential'){
+			parallel {
+				stage('In parallel 1'){
+					steps{
+						echo "In parallel 1"
+					}
+				}
+				stage('In parallel 2'){
+					steps{
+						echo "In parallel 2"
+					}
+				}
+			}
+		}
+
 	}
 }
