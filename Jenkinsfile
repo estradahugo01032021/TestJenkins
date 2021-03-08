@@ -6,6 +6,11 @@ agent any
 	}
 	stages{
 		stage('Start'){
+			input{
+				message "Deply to production"
+				ok "yes, Deploy"
+				submitter "estradahugo01032021"
+			}
 			steps{
 				echo "Hello"
 				echo "test"
@@ -14,7 +19,7 @@ agent any
 
 		stage('Build'){
 			steps{
-				echo "Second Step" + jenkins
+				echo "Second Step " + jenkins
 			}
 		}		
 	}
