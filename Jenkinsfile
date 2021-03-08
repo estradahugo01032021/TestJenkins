@@ -4,6 +4,10 @@ agent any
 	{
 		jenkins= "Jenkins outside "
 	}
+	parameters
+	{
+		string {name: "Person", defaultValue: "JenkinsMSR", description: "Ser your name"}
+	}
 	stages{
 		stage('Start'){
 			input{
