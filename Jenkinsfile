@@ -9,7 +9,9 @@ agent any
 			steps{
 				echo "Hello"
 				echo "test"
-					}
+				}
+			steps{}
+				echo "Second Step"	 + jenkins
 			}	
 		}
 	
