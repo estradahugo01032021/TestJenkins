@@ -10,9 +10,11 @@ agent any
 				echo "Hello"
 				echo "test"
 				}
-			steps{}
+		stage('Build'){
+			steps{
 				echo "Second Step"	 + jenkins
-			}	
+			}
+		}	
 		}
 	
 }
